@@ -1,0 +1,88 @@
+.header {
+    padding: 60px 0 0 0;
+    color: $dark;
+}
+
+.burger__list {
+    display: none
+}
+
+.nav {
+    @extend %flex-between;
+    padding-left: 0;
+    
+    &__list {
+        @extend %flex-center;
+        // margin: 0 -15px;
+    }
+
+    &__item {
+        // padding: 0 15px;
+        margin: 0 17px 0 17px;
+    }
+    
+
+    &__link {
+        @include font-setting(14px, 500, 0, 0);
+        color: $dark;
+        transition: all 0.3s ease;
+
+        &:hover {
+            padding: 10px;
+            background-color: $accent;
+            border-radius: 10px;
+            color: $dark;
+
+        }
+    }
+
+}
+
+
+
+
+.cart {
+    display: flex;
+    align-items: center;
+
+    &__icon {
+        display: block;
+        height: 30px;
+    }
+    &__span {
+        @extend %flex-center;
+        position: relative;
+        background-color: $accent;
+        margin: 5px 0 0 30px;
+        @include size(33px, 16px);
+        @include font-setting (12px, 700, 0, 0);
+        text-align: center;
+        color: #fff;    
+       }
+
+    &__span::before {
+        content: "";
+        position: absolute;
+        right: 33px;
+        top: 0;
+        border: 8px solid transparent;
+        border-right: 10px solid $accent;
+    }
+}
+
+
+.menu__icon {
+    display: none;
+}
+
+.header *:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
