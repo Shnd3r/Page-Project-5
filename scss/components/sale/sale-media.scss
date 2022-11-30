@@ -1,0 +1,104 @@
+@include breakpoint(xl) {
+
+    .sale {
+        &__title {
+            font-size: 51px;
+        }
+        
+    }
+}
+
+
+
+
+@include breakpoint(lg) {
+   
+
+    .sale {
+        padding: 110px 0 60px 0;
+
+        &__container {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__info {
+            text-align: center;
+            flex: 0 0 100%;
+            margin-bottom: 30px;
+        }
+
+        &__box {
+            max-width: 450px;
+            flex: 0 0 100%;
+        }
+
+        &__img {
+            max-height: 450px;
+         }
+
+         
+        &__price-old {
+            margin: 0 0 10px 0;
+        }
+
+    
+    }
+}
+
+
+@include breakpoint(sm) {
+
+    .sale {
+        &__img {
+            max-width: 400px;
+            max-height: 400px;
+         }
+
+
+         &__text {
+            font-size: 24px;
+        }
+    
+        &__title {
+            font-size: 36px;
+        }
+
+         &__price-old {
+            font-size: 24px;
+        }
+    
+        &__price-new {
+            font-size: 36px;
+        }
+
+
+    }
+}
+
+@include breakpoint(xs) {
+
+    .sale {
+        padding: 100px 0 50px 0;
+        &__img {
+            max-width: 300px;
+            max-height: 300px;
+         }
+
+         &__text {
+            font-size: 18px;
+        }
+    
+        &__title {
+            font-size: 28px;
+        }
+
+         &__price-old {
+            font-size: 16px;
+        }
+    
+        &__price-new {
+            font-size: 28px;
+        }
+    }
+}
