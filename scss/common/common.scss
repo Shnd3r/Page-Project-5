@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body__lock {
+    overflow: hidden;
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+h1,h2,h3 {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.page {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    
+
+
+
+    &-cream {
+        background-color: $cream;
+    }
+    &-dark {
+        background-color: $dark;
+    }
+
+    
+}
+
+
+.wrapper {
+    max-width: 1125px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+@include breakpoint("xl")  {
+    .wrapper {
+        padding: 0 20px;
+    }
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    &__title {
+        display: inline-block;
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    
+}
+
+
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 30px;
+    background-color: $accent;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+
+    &:hover {
+        opacity: 0.5;
+    }
+    
+    &__xs {
+        @include size(80px,30px);
+        padding: 15px 30px;
+
+       
+    }
+
+    &__products {
+        margin: 0 auto;
+        padding: 17px 35px;
+    }
+
+    &__products span {
+        margin-right: 9px;
+    }
+}
+
+
+// Вариант адаптива изображения (Через object fit);
+
+// .ibg {
+//     position: relative;
+    
+//     img {
+//         position: absolute;
+//         width: 100%;
+//         height: 100%;
+//         top: 0;
+//         left: 0;
+//         object-fit: cover;
+//     }
+// }
+// Для родителя еще дополнительно используется padding снизу и сверху в процентах (чтобы картинка уменьшалась и по высоте и по ширине)
