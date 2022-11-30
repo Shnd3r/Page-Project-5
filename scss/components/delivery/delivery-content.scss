@@ -1,0 +1,26 @@
+.delivery {
+    padding: 70px 0;
+
+    &__container {
+        text-align: center;
+        color: #fff;
+    }
+
+    &__title {
+        @include font-setting(30px, 400, calc(37/30*100%), 0.02em);
+        text-transform: uppercase;
+        margin: 0 0 20px 0;
+    }
+    span {
+        font-weight: 700;
+    }
+
+    &__text {
+        @include font-setting(21px, 300, calc(26/21*100%), 0);
+    }
+}
+
+
+.delivery *:last-child {
+    margin-bottom: 0;
+}
