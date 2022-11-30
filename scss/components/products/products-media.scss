@@ -1,0 +1,39 @@
+@include breakpoint(lg) {
+    .products {
+        padding: 130px 0;
+
+        &__item {
+            flex: 0 0 50%;
+
+            &:nth-child(1), &:nth-child(2)  {
+                margin-bottom: 50px;
+            }
+            
+        }
+    }  
+}
+
+
+@include breakpoint(sm) {
+    .products {
+        padding: 100px 0;
+
+        &__item {
+            flex: 0 0 100%;  
+            margin-bottom: 40px;    
+        }
+    }
+
+}
+
+
+@include breakpoint(xs) {
+    .products {
+
+        &__title {
+            font-size: 24px;
+        }
+    }
+
+    
+}
